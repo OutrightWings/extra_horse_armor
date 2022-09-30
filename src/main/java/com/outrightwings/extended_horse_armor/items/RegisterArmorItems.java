@@ -1,7 +1,6 @@
 package com.outrightwings.extended_horse_armor.items;
 
 import com.outrightwings.extended_horse_armor.ExtendedArmorMain;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HorseArmorItem;
 import net.minecraft.world.item.Item;
@@ -10,7 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 
-public class RegisterItems {
+public class RegisterArmorItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExtendedArmorMain.MOD_ID);
 
     //Horse Armor

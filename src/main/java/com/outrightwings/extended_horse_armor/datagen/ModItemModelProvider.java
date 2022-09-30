@@ -1,7 +1,7 @@
 package com.outrightwings.extended_horse_armor.datagen;
 
 import com.outrightwings.extended_horse_armor.ExtendedArmorMain;
-import com.outrightwings.extended_horse_armor.items.RegisterItems;
+import com.outrightwings.extended_horse_armor.items.RegisterArmorItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -18,7 +18,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        for (RegistryObject<Item> item : RegisterItems.ITEMS.getEntries()) {
+        for (RegistryObject<Item> item : RegisterArmorItems.ITEMS.getEntries()) {
             simpleItem(item.get());
         }
     }
