@@ -11,8 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
         "net/minecraft/world/item/enchantment/EnchantmentCategory$1",
         "net/minecraft/world/item/enchantment/EnchantmentCategory$2",
         "net/minecraft/world/item/enchantment/EnchantmentCategory$3",
-        "net/minecraft/world/item/enchantment/EnchantmentCategory$4",
-        "net/minecraft/world/item/enchantment/EnchantmentCategory$5"
+        "net/minecraft/world/item/enchantment/EnchantmentCategory$4"
 })
 public class EnchantmentCategoryMixin {
     //Add horse armor to these types so that it can have the enchantments from these sections

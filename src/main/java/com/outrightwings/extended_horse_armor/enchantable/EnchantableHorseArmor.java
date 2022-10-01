@@ -13,9 +13,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import static net.minecraft.world.item.enchantment.EnchantmentHelper.getItemEnchantmentLevel;
 
 public class EnchantableHorseArmor {
-    //create category for the horse armor in the enchantment system
-    static EnchantmentCategory HORSE = EnchantmentCategory.create("horse_armor", itemIn -> (itemIn instanceof HorseArmorItem));
-
     public static void checkHorseArmorEnchantmentLevelHook(Enchantment enchantmentIn, LivingEntity entityIn, CallbackInfoReturnable<Integer> cir){
         if(entityIn instanceof AbstractHorse){
             ItemStack armor = ((AbstractHorse)entityIn).getItemBySlot(EquipmentSlot.CHEST);
