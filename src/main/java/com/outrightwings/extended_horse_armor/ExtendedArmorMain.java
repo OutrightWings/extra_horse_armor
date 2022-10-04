@@ -1,6 +1,7 @@
 package com.outrightwings.extended_horse_armor;
 
 import com.mojang.logging.LogUtils;
+import com.outrightwings.extended_horse_armor.config.DataTags;
 import com.outrightwings.extended_horse_armor.items.RegisterArmorItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,6 +19,7 @@ public class ExtendedArmorMain
     public static final String MOD_ID = "extended_horse_armor";
     public ExtendedArmorMain()
     {
+        DataTags.setup();
         // Register the setup method for modloading
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
