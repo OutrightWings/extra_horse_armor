@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
+    "minecraft:blast_protection",
+    "minecraft:depth_strider",
+    "minecraft:feather_falling",
+    "minecraft:frost_walker",
+    "minecraft:mending",
+    "minecraft:projectile_protection",
+    "minecraft:respiration",
+    "minecraft:soul_speed",
+    "minecraft:thorns",
+    "minecraft:unbreaking",
     "minecraft:binding_curse",
     "minecraft:vanishing_curse"
   ]
