@@ -15,9 +15,14 @@ public class RegisterArmorItems {
     //Horse Armor
     public static final RegistryObject<HorseArmorItem> EMERALD_HORSE_ARMOR = registerHorseArmor("emerald",10);
     public static final RegistryObject<HorseArmorItem> QUARTZ_HORSE_ARMOR = registerHorseArmor("quartz",10);
+    public static final RegistryObject<HorseArmorItem> AMETHYST_HORSE_ARMOR = registerHorseArmor("amethyst",10);
+
     public static final RegistryObject<HorseArmorItem> DARK_IRON_HORSE_ARMOR = registerHorseArmor("dark_iron",10);
+    public static final RegistryObject<HorseArmorItem> NOVICE_HORSE_ARMOR = registerHorseArmor("novice",10);
+    public static final RegistryObject<HorseArmorItem> APPRENTICE_HORSE_ARMOR = registerHorseArmor("apprentice",10);
+    public static final RegistryObject<HorseArmorItem> MASTER_HORSE_ARMOR = registerHorseArmor("master",10);
     private static RegistryObject<HorseArmorItem> registerHorseArmor(String material, int protection){
-        RegistryObject<HorseArmorItem> obj = ITEMS.register(material + "_horse_armor", () -> new ExtendedHorseArmorItem(protection, material, (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_MISC)));
+        RegistryObject<HorseArmorItem> obj = ITEMS.register(material + "_horse_armor", () -> new HorseArmorItem(protection, material, (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_MISC)));
         return obj;
     }
 }
